@@ -7,7 +7,7 @@ Bento is a language for orchestrating data flow problems performantly and concur
 - dynamic dispatching via function overloading
 - no null
 
-```
+```bento
 function main(string[] args) -> int32
   println("Hello World!")
 ```
@@ -22,7 +22,7 @@ Bento is built for entity component systems, ECS systems are typically used for 
 
 ## simple physics engine
 
-```julia
+```bento
 component Time
   delta_time float32
   
