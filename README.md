@@ -30,7 +30,7 @@ system Rendering[p Position](entity)
   # TODO - render rectancles with entity.p.x and entity.p.y
 
 function main(string[] args) -> int32
-  @ Creqate a resource for time
+  @ Create a resource for time
   @resource Time{.1}
   # Create two entities
   @entity Description{"player 1"} Position{0,0} Velocity{0,0};
