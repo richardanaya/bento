@@ -62,6 +62,11 @@ function main(string[] args) -> int32
 
 ## data processing
 
+
+## polymorphic behavior
+
+Inheritance can sometimes lead to extremely tricky scenarios such as the [OOP diamond problem](https://en.wikipedia.org/wiki/Multiple_inheritance#The_diamond_problem), using polymorphic behavior via components can simplify the expression of these problems.
+
 # Why should't you use Bento?
 There are a number of scenerios where Bento might not be of value
 * Your data structure is extremely small. This language is probably just overkill.
