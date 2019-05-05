@@ -1,11 +1,10 @@
 # 🍱 Bento
 
-Bento is a language for orchestrating data flow problems performantly and concurrently.
-
-- static typed
-- dynamic polymorphism via entity component system
-- dynamic dispatching via function overloading
-- no null
+Bento is a language for orchestrating data flow problems performantly and concurrently and safely. It's primary features are:
+* static typed
+* dynamic polymorphism via entity component system
+* dynamic dispatching via function overloading
+* no null
 
 ```bento
 function main(string[] args) -> int32
