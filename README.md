@@ -3,7 +3,7 @@
 - no null
 - static typed
 
-```nim
+```julia
 component Time
   time int64
   
@@ -16,17 +16,17 @@ component Velocity
   y float32
 
 system Physics [Time;p Position,v Velocity](timer,entity)
-  entity.p.x = entity.p.x * timer.time
+  entity.p.x = entity.p.x * timer.time;
   
 system Logging [desc Description](entity)
-  println(entity.desc.name)
+  println(entity.desc.name);
 
 system Rendering [p Position](entity)
   // TODO: render rectancles with entity.p.x and entity.p.y
 
 function main(i int32) -> () 
-  @entity Position{0,0} Velocity{0,0}
-  @entity Position{0,0} Velocity{1.0,0}
+  @entity Position{0,0} Velocity{0,0};
+  @entity Position{0,0} Velocity{1.0,0};
   while true
-    @run (Logging,Physics) -> Rendering
+    @run (Logging,Physics) -> Rendering;
 ```
