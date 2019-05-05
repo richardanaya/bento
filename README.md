@@ -3,7 +3,7 @@
 - no null
 - static typed
 
-```zig
+```python
 component Time
   time int64
   
