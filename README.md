@@ -1,5 +1,5 @@
 - dynamic polymorphism
-- dynamic dispatching
+- dynamic dispatching via function overloading
 - functional
 - no null
 - static typed
