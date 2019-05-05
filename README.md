@@ -1,10 +1,8 @@
 # 🍱 Bento
-
-- dynamic polymorphism
-- dynamic dispatching via function overloading
-- functional
-- no null
 - static typed
+- dynamic polymorphism via entity component system
+- dynamic dispatching via function overloading
+- no null
 
 ```julia
 component Time
