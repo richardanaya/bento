@@ -62,7 +62,7 @@ function main(string[] args) -> int32
 ```
 
 ## data processing
-Bento's language choices are meant to reduce cyclometric complexity and long chains of standardized operations that can be optimized LLVM for CPU optimzations like SIMD or MIMD
+Bento's language choices are meant to reduce cyclometric complexity and encourage long chains of standardized operations that can be optimized LLVM for CPU optimizations like SIMD or MIMD
 
 ## polymorphic behavior
 
