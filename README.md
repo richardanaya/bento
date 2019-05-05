@@ -2,6 +2,7 @@
 
 Bento is a language for orchestrating data flow problems performantly and concurrently and safely. It's primary features are:
 * static typed
+* targets LLVM
 * dynamic polymorphism via entity component system
 * dynamic dispatching via function overloading
 * no null
@@ -60,7 +61,7 @@ function main(string[] args) -> int32
 ```
 
 ## data processing
-
+Bento's language choices are meant to reduce cyclometric complexity and long chains of standardized operations that can be optimized LLVM for CPU optimzations like SIMD or MIMD
 
 ## polymorphic behavior
 
