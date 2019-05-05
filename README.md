@@ -6,7 +6,7 @@
 
 ```julia
 component Time
-  time int64
+  delta_time float32
   
 component Description
   name string
@@ -29,11 +29,14 @@ system Logging[desc Description](entity)
 system Rendering[p Position](entity)
   # TODO - render rectancles with entity.p.x and entity.p.y
 
-function main(i int32) -> () 
+function main(string[] args) -> int32
+  @ Creqate a resource for time
+  @resource Time{.1}
   # Create two entities
   @entity Description{"player 1"} Position{0,0} Velocity{0,0};
   @entity Description{"player 1"} Position{0,0} Velocity{1.0,0};
   while true
     # Run logging and physics system in parallel the run rendering system
     @run Logging Physics -> Rendering;
+  0
 ```
