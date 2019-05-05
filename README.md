@@ -15,13 +15,13 @@ component Velocity
   x float32
   y float32
 
-system Physics [Time;p Position,v Velocity](timer,entity)
+system Physics[Time;p Position,v Velocity](timer,entity)
   entity.p.x = entity.p.x * timer.time;
   
-system Logging [desc Description](entity)
+system Logging[desc Description](entity)
   println(entity.desc.name);
 
-system Rendering [p Position](entity)
+system Rendering[p Position](entity)
   // TODO: render rectancles with entity.p.x and entity.p.y
 
 function main(i int32) -> () 
