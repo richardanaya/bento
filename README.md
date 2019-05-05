@@ -20,6 +20,8 @@ bento -o hello hello.b
 
 Bento is built for entity component systems, ECS systems are typically used for games but are usable for polymorphic data problems that want to parallelize operations of any type.
 
+## simple physics engine
+
 ```julia
 component Time
   delta_time float32
@@ -57,6 +59,8 @@ function main(string[] args) -> int32
     @run Rendering
   0
 ```
+
+## data processing
 
 # Why should't you use Bento?
 There are a number of scenerios where Bento might not be of value
