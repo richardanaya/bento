@@ -71,5 +71,5 @@ Inheritance can sometimes lead to extremely tricky scenarios such as the [OOP di
 # Why should't you use Bento?
 There are a number of scenerios where Bento might not be of value
 * Your data structure is extremely small. This language is probably just overkill and maybe something like C would be better.
-* You have as many different types of data as you have entities. In cases of GUI applications, OOP might be a better fit.
+* You have as many different types of data as you have entities. In cases of GUI applications, OOP or functional might be a better fit.
 * Parallelization isn't possible for you. A big part of this language is running systems concurrently. Your data flow problem might be expressed more simply without the concept of systems.
