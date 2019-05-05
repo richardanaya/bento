@@ -28,5 +28,5 @@ function main i int32 -> ()
   @entity Position{0,0} Velocity{0,0}
   @entity Position{0,0} Velocity{1.0,0}
   while true
-    @exec (Logging,Physics) -> Rendering
+    @run (Logging,Physics) -> Rendering
 ```
