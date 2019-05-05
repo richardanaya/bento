@@ -22,7 +22,7 @@ system Logging [desc Description](entity)
   println(entity.desc.name)
 
 system Rendering [p Position](entity)
-  # Todo: render rectancles with entity.p.x and entity.p.y
+  // TODO: render rectancles with entity.p.x and entity.p.y
 
 function main(i int32) -> () 
   @entity Position{0,0} Velocity{0,0}
