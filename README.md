@@ -8,6 +8,9 @@
 component Time
   time int64
   
+component Description
+  name string
+  
 component Position
   x float32
   y float32
@@ -23,11 +26,13 @@ system Logging[desc Description](entity)
   println(entity.desc.name);
 
 system Rendering[p Position](entity)
-  // TODO: render rectancles with entity.p.x and entity.p.y
+  # TODO - render rectancles with entity.p.x and entity.p.y
 
 function main(i int32) -> () 
-  @entity Position{0,0} Velocity{0,0};
-  @entity Position{0,0} Velocity{1.0,0};
+  # Create two entities
+  @entity Description{"player 1"} Position{0,0} Velocity{0,0};
+  @entity Description{"player 1"} Position{0,0} Velocity{1.0,0};
   while true
-    @run (Logging,Physics) -> Rendering;
+    # Run logging and physics system in parallel the run rendering system
+    @run Logging Physics -> Rendering;
 ```
