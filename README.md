@@ -5,6 +5,7 @@ Bento is a language for orchestrating data flow problems performantly and concur
 * targets LLVM
 * dynamic polymorphism via entity component system
 * dynamic dispatching via function overloading
+* garbage collected 
 * no null
 
 ```bento
