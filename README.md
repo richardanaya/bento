@@ -36,7 +36,7 @@ function main(string[] args) -> int32
   @entity Description{"player 1"} Position{0,0} Velocity{0,0};
   @entity Description{"player 1"} Position{0,0} Velocity{1.0,0};
   while true
-    # Run logging and physics system in parallel the run rendering system
+    # Run logging and physics system in parallel then run rendering system
     @run Logging Physics -> Rendering;
   0
 ```
