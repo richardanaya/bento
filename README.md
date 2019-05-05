@@ -20,7 +20,8 @@ component Velocity
   y float32
 
 system Physics[Time;p Position,v Velocity](timer,entity)
-  entity.p.x = entity.p.x * timer.time;
+  entity.p.x = entity.v.x * timer.time;
+  entity.p.y = entity.v.y * timer.time;
   
 system Logging[desc Description](entity)
   println(entity.desc.name);
