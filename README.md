@@ -3,7 +3,7 @@
 - no null
 - static typed
 
-```python
+```nim
 component Time
   time int64
   
