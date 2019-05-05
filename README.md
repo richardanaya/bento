@@ -7,6 +7,19 @@ Bento is a language for orchestrating data flow problems performantly and concur
 - dynamic dispatching via function overloading
 - no null
 
+```
+function main(string[] args) -> int32
+  println("Hello World!")
+```
+
+```
+bento -o hello hello.b
+```
+
+# Entity Component System
+
+Bento is built for entity component systems, ECS systems are typically used for games but are usable for polymorphic data problems that want to parallelize operations of any type.
+
 ```julia
 component Time
   delta_time float32
@@ -44,3 +57,9 @@ function main(string[] args) -> int32
     @run Rendering
   0
 ```
+
+# Why should't you use Bento?
+There are a number of scenerios where Bento might not be of valua
+* Your data structure is extremely small. This language is probably just overkill.
+* You have as many different types of data as you have entities. In cases of GUI applications, OOP might be a better fit.
+* Parallelization isn't possible for you. A big part of this language is running systems concurrently. Your data flow problem might be expressed more simply without the concept of systems.
