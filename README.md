@@ -24,7 +24,7 @@ system Logging [desc Description](entity)
 system Rendering [p Position](entity)
   # Todo: render rectancles with entity.p.x and entity.p.y
 
-function main i int32 -> () 
+function main(i int32) -> () 
   @entity Position{0,0} Velocity{0,0}
   @entity Position{0,0} Velocity{1.0,0}
   while true
